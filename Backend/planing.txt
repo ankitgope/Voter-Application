@@ -1,0 +1,43 @@
+Writing what we want in the voter app
+1->  WHAT??
+A functionality where user can give vote to give set of candidate
+
+MODELS?
+ROUTES?
+
+Voting app functionality
+
+1. User sign/signup
+2. see the list of candidate
+3. user can only vote once not more then that
+4. user must have voter card --> unique identity
+5. A admin that can edit the candidate list 
+6. There must be a list of candidate where people can see the candidate name and image an the vote count they got 
+7. Password reset
+8. user can only voter card an Password for login
+9. Admin cannot vote 
+------------------------------------------------------------------------------------------------------------------------------
+
+ROUTES
+------
+
+User Authentication 
+    /signup : POST - create a new user / new voter
+    /login : POST -  for login 
+
+Voting
+    /candidate : GET - to get the list of candidate 
+    /vote/candidateId : GET - get the details of the candidate 
+
+vote Couts
+    /vote/counts : GET - sorts the candidate by there vote count
+
+user Profile
+    /profile GET : - get the user profile
+    /profile/password : PUT - edit the password (Forget password)
+
+Admin candidate management 
+    /candidates : POST - create a new candidate
+    /candidate/candidateId : PUT - update the existing candidate
+    /candidate/candidateId : DELETE - delete a existing candidate
+
