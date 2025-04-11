@@ -1,7 +1,7 @@
 const User = require("./user");
 
 // Candidate schema for the candidate model like which party the belong the name of the candidate
-const mongoose = requite("mongoose");
+const mongoose = require("mongoose");
 // creating a schema for the user
 const candidateSchema = new mongoose.Schema({
   name: {
@@ -19,7 +19,7 @@ const candidateSchema = new mongoose.Schema({
   votes: [
     {
       user: {
-        type: mongoose.Schema.Types.ObjetId,
+        type: mongoose.Schema.Types.ObjectId,
         ref: User,
         required: true,
       },
